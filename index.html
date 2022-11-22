@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>p6-gallery</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --rosa: #ab4e68;
+        --naranja: #b07156;
+        --purpura: #533745;
+        --negro: #000000;
+        --crema: #ffffff;
+        --rosa-bg: #ab4e68;
+        --naranja-bg: #b07156;
+        --purpura-bg: #533745;
+        --negro-bg: #000000;
+        --crema-bg: #ffffff;
+        --titular: "Roboto", sans-serif;
+        --autor: "Roboto", sans-serif;
+        --descripcion: "Noto Serif", serif;
+      }
+      img {
+        width: 100%;
+      }
+      h1 {
+        padding: 1em 0 0 0;
+        font-family: var(--titular);
+        color: var(--rosa);
+        font-size: 0.9em;
+        font-weight: 300;
+        line-height: 14px;
+        font-variant: small-caps;
+      }
+
+      h2 {
+        font-family: var(--autor);
+        color: var(--naranja);
+        font-size: 1.2em;
+        font-weight: 700;
+        padding: 1em 0 0 0;
+      }
+      p {
+        font-family: var(--descripcion);
+        color: var(--negro);
+        font-size: 0.6em;
+        font-weight: 400;
+      }
+      h3 {
+        font-family: var(--titular);
+        color: var(--purpura);
+        font-size: 0.6em;
+        font-weight: 300;
+        padding: 0.5em 0 0 0;
+      }
+
+      .gallery {
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+        background-color: rgb(214, 208, 200);
+        padding: 2em;
+      }
+      .card {
+        transition: flex-grow 1s;
+        flex-basis: 23%;
+        display: flex;
+        flex-direction: column;
+        background-color: azure;
+        padding: 1em;
+        border-radius: 0.2em;
+      }
+
+      .card:nth-child(2) {
+        flex-grow: 1;
+      }
+
+      .card:nth-child(4) {
+        flex-grow: 1;
+      }
+
+      .card:nth-child(6) {
+        flex-grow: 1;
+      }
+
+      .card:nth-child(6) {
+        flex-grow: 1;
+      }
+      .card_img {
+        width: 100%;
+        height: 336px;
+      }
+      .card_img img {
+        object-fit: cover;
+        height: 100%;
+        object-position: top;
+      }
+      .card:hover {
+        flex-grow: 1;
+        box-shadow: 0.1em 0.1em 0.5em var(--purpura);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="gallery">
+        <div class="card">
+          <figure class="card_img">
+            <img src="img/03.jpg" alt="" />
+          </figure>
+          <header class="card_txt">
+            <h1>retrato del artista frederic Leighton</h1>
+            <h2>Sol ardiente de junio: Sueño de un "día" de verano.</h2>
+            <p>
+              Esta es la obra maestra de Leighton, que realizó al final de su
+              vida, sólo un año antes de su fallecimiento. Una sola figura ocupa
+              la mayor parte del cuadro. Es una bella joven, que duerme en una
+              pose un tanto peculiar, prácticamente enroscada sobre sí misma.
+            </p>
+            <h3>Reino Unido, 1895</h3>
+          </header>
+        </div>
+        <div class="card">
+          <figure class="card_img">
+            <img src="img/02.jpg" alt="" />
+          </figure>
+          <header class="card_txt">
+            <h1>obra del artista francisco de goya</h1>
+            <h2>El gran cabrón</h2>
+            <p>
+              Esa muchedumbre grotesca que poblaba la Peregrinación a la fuente
+              de San Isidro parece haber llegado a su destino: una misa negra
+              oficiada por un macho cabrío.
+            </p>
+            <h3>España, 1823</h3>
+          </header>
+        </div>
+        <div class="card">
+          <figure class="card_img">
+            <img src="img/01.jpg" alt="" />
+          </figure>
+          <header class="card_txt">
+            <h1>obra del artista vincent van gogh</h1>
+            <h2>El cartero Roulin: Retrato de una amistad.</h2>
+            <p>
+              Joseph Roulin tenía 47 años cuando Van Gogh le hizo este retrato.
+              Eran compañeros de taberna y el pintor comparaba al cartero con
+              Sócrates y con Dostoyevski, por su barba, su sabiduría
+              alcohilizada y su buen corazón.
+            </p>
+            <h3>Países Bajos, 1888</h3>
+          </header>
+        </div>
+        <div class="card">
+          <figure class="card_img">
+            <img src="img/04.jpg" alt="" />
+          </figure>
+          <header class="card_txt">
+            <h1>Retrato del artista Adolf Himéry-Hirschl</h1>
+            <h2>Asuero en el fin del mundo: Frío, Muerte y desesperación.</h2>
+            <p>
+              El Judío errante es un mito sobre un hebreo que se burló de Jesús
+              mientras le daban de lo lindo en el camino hacia la Crucifixión.
+              Al ver esto, Dios decidió poner en su lugar a este tipo y lo
+              condenó a vagar por el mundo hasta la Parusía, es decir, el
+              retorno de Jesucristo a la Tierra. Asuero, por tanto, anda errante
+              e inmortal por la Tierra, y aquí lo vemos en los confines mismos
+              del planeta, en «el fin del mundo.
+            </p>
+            <h3>Hungría, 1888</h3>
+          </header>
+        </div>
+        <div class="card">
+          <figure class="card_img">
+            <img src="img/05.jpeg" alt="" />
+          </figure>
+          <header class="card_txt">
+            <h1>Retrato del artistaGuido Reni</h1>
+            <h2>San Miguel: El Arcángel le pisa la cabeza a Satanás.</h2>
+            <p>
+              San Miguel, el arcángel que expulsó a Satanás del cielo. Aquí lo
+              vemos con su típica armadura al estilo romano, ensañándose con el
+              ángel caído que ha sido derrotado. Ambos son ángeles, con sus
+              alas, pero está claro que son muy distintos.
+            </p>
+            <h3>Italia, 1636</h3>
+          </header>
+        </div>
+        <div class="card">
+          <figure class="card_img">
+            <img src="img/06.jpg" alt="" />
+          </figure>
+          <header class="card_txt">
+            <h1>Retrato del artista Alfred Guillou</h1>
+            <h2>Adieu! Un beso de despedida.</h2>
+            <p>
+              Alfred Guillou, pintor de la Bretaña, amante del mar, creó a
+              menudo cuadros con temas bretones y marítimos, muy apreciados en
+              París por ese «exotismo folclórico» que tienen las provincias para
+              los paletos de capital.
+            </p>
+            <h3>Francia, 1892</h3>
+          </header>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
