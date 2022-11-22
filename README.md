@@ -1,2 +1,2 @@
 # p6
-galeria
+gallery
